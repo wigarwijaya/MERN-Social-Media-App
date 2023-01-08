@@ -1,6 +1,6 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
-const UserSchema = new Schema(
+const UserSchema = new mongoose.Schema(
   {
     firstName: {
       type: String,
@@ -25,7 +25,7 @@ const UserSchema = new Schema(
       required: true,
       min: 5,
     },
-    pictureParh: {
+    picturePath: {
       type: String,
       default: "",
     },
